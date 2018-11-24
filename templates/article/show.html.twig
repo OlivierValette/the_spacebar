@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Read {{ title }}
+{% endblock %}
+
+
+{% block body %}
+
+    <h1>{{ title }}</h1>
+
+    <div>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi deserunt dolorem dolorum esse explicabo iste laborum minus natus non obcaecati possimus quas quidem rem tempora, totam, unde vel veniam?</span><span>Alias amet aspernatur atque culpa cumque debitis deserunt eaque harum illo, illum ipsam iusto laboriosam maiores minus necessitatibus possimus quae repudiandae saepe unde voluptates? Delectus nam nemo nisi sit voluptatum!</span><span>Ab aspernatur corporis cum cupiditate dolorum eos est et eveniet exercitationem fugiat iste iusto labore minima minus neque nihil, quia quo quod quos repellat rerum tempore temporibus velit voluptates voluptatum?</span><span>Accusantium ad architecto doloribus est excepturi fugit illum ipsa labore natus necessitatibus quae reiciendis repellat rerum similique sint, tenetur veritatis. Aspernatur autem blanditiis consequatur dignissimos id nostrum provident quibusdam quos.</span><span>Amet animi at consectetur, consequatur culpa cum cupiditate, deserunt eius fuga impedit, inventore maxime natus nostrum perferendis provident quam reprehenderit sapiente soluta suscipit voluptatem. Ea fuga neque numquam similique tempora.</span>
+        </p>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam commodi dolorem enim eveniet excepturi hic laborum molestias natus, nisi nulla quasi quidem reprehenderit repudiandae, similique temporibus, ullam ut voluptatum.</span><span>Aliquid commodi consequuntur corporis dicta eaque enim eos nam natus nemo odio possimus, quam quos saepe ut velit, veniam vero? Ab accusantium autem dolorem est facere repudiandae temporibus, vero voluptatibus.</span><span>Atque beatae, ducimus et ex ipsam, laborum obcaecati optio provident quaerat, quis ratione recusandae reiciendis rem sapiente similique! In ipsa quis sint voluptate. Beatae deleniti labore minus molestias mollitia nemo?</span><span>Ad adipisci culpa, impedit nostrum quibusdam quidem soluta temporibus voluptate! Ad doloribus eligendi maiores nostrum numquam, optio perferendis quae qui sunt tempore veniam voluptate. Beatae minima omnis quae quasi recusandae.</span><span>Accusamus alias cum cumque doloribus facilis hic id iure laudantium libero modi neque nobis odit perferendis quam, sunt suscipit tempora, tempore tenetur totam voluptas. Beatae est illum incidunt sit voluptatibus?</span>
+        </p>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aut beatae blanditiis cum cumque dolorem error ex expedita labore nobis nostrum perferendis praesentium, quia reiciendis, repellat, soluta ut veniam voluptatum.</span><span>Aperiam assumenda aut dolor eos esse explicabo facilis, incidunt ipsum natus officia perferendis placeat saepe sequi soluta sunt ut voluptates. Alias, aliquid, exercitationem! Aut deleniti magni odit praesentium quos rem.</span><span>Ab, aperiam at aut, culpa eius error eveniet ex incidunt labore neque nisi obcaecati optio pariatur praesentium quibusdam ratione, repellat reprehenderit vitae voluptatem voluptates. Ea iste, saepe? Aliquid, dignissimos, non.</span><span>Amet architecto aut, autem blanditiis corporis deleniti doloremque dolores dolorum enim, esse excepturi expedita facere harum incidunt laboriosam necessitatibus quas quia vel. Dolore eligendi nisi numquam porro rerum, sit veritatis.</span><span>Amet, animi asperiores commodi consequatur consequuntur culpa, deleniti deserunt enim illum minus molestiae molestias nemo nobis perferendis quaerat quis quo reiciendis reprehenderit repudiandae sunt suscipit ullam unde ut vero voluptate?</span>
+        </p>
+    </div>
+
+    <h2>Comments ({{ comments|length }})</h2>
+
+    <ul>
+        {%  for comment in comments %}
+        <li>
+            {{ comment }}
+        </li>
+        {% endfor %}
+
+    </ul>
+
+{% endblock %}
